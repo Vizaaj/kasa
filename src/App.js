@@ -31,6 +31,7 @@ export default class App extends Component {
       .then(data => this.setState({ datas: data, isLoading: false })) 
       .catch(error => this.setState({ error, isLoading: false }));
   };
+  // Rendu de la classe App
   render() {
     
     // Message d'erreur dans la console si l'état est en "error"

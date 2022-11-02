@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 
-// Construction et export de la classe RouteConfig
+// Construction et export de la classe Tag
 export default class Tag extends Component {
     constructor(props) {
         super(props);
@@ -15,7 +15,7 @@ export default class Tag extends Component {
     render() {
         return (
             <>
-                {/* Affichage de chaque Tage en fonction de l'id de l'Accommodation */}
+                {/* Affichage de chaque Tag en fonction de l'id de l'Accommodation */}
                 {this.state.datas.map(function(ele) {
                     return (
                         <div key={ele.id} className="tags">

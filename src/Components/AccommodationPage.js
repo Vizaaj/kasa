@@ -44,6 +44,7 @@ class AccommodationPage extends Component {
                     <main key={el.id}>
                         {/* Affichage de la Gallery correspondant à l'Accommodation*/}
                         <Gallery datas={this.state.singleAccommodation} />
+                        {/* Affichage du title et location correspondant à l'Accommodation*/}
                         <section className="accommodation-info">
                             <div className="accommodation-info__left-side">
                                 <h1 className="accommodation-info__left-side__title">{el.title}</h1>
@@ -51,6 +52,7 @@ class AccommodationPage extends Component {
                                 {/* Affichage des Tags correspondants à l'Accommodation*/}
                                 <Tag datas={this.state.singleAccommodation} />
                             </div>
+                              {/* Affichage des infos de l'hôte correspondant à l'Accommodation*/}
                               <div className="accommodation-info__right-side">
                                 <div className="accommodation-info__right-side__host-info">
                                     <div className="accommodation-info__right-side__host">
