@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../SCSS/carousel.scss";
 
 
 // Construction et export de la classe Gallery
@@ -51,6 +52,12 @@ export default class Gallery extends Component {
                         </span>
                     </div> :
                     <div></div>
+                }
+                {this.state.arrayLength > 0 ? (
+                    <div className="carousel__counter">
+                    {this.state.slideIndex + 1}/{this.state.arrayLength}
+                    </div>
+                  ) : ("")
                 }
             </section>
         );
